@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 915px;
+  margin: 50px auto;
+  height: auto;
+}
+
+.box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 500px;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* General styling for description in all boxes */
+.description {
+  margin: 10px 0;
+}
+
+/* Styling for description heading */
+.description-heading {
+  font-weight: bold;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Styling for description content text */
+.description-content {
+  color: black;
+  display: inline;
+}
+
+.content {
+  padding: 10px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.small-nav {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.up-arrow {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.nav-text {
+  font-weight: bold;
+}
+
+.gray-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 3px;
+}
+
+.gray-box {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 3px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.box-heading {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box-content textarea {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+  background-color: transparent;
+  color: #333;
+}
+
+.box-content textarea::placeholder {
+  color: #aaa;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-container i {
+  font-size: 15px;
+  color: #333;
+}
+
+.buttons-container {
+  justify-content: right;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.select-btn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.select-btn:hover {
+  background-color: #ddd;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-sub-thread {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.gray-box-container {
+  margin-top: 20px;
+}
+
+.light-gray-box {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.white-box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.white-box textarea {
+  width: 100%;
+  height: 30px;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+}
+.form-section label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.form-section input[type="text"],
+.form-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-section textarea {
+  resize: vertical;
+}
+/* Styling the nav bar */
+.toolbar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.toolbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.toolbar ul li {
+  margin-right: 15px;
+  font-size: 16px;
+  color: black;
+}
+
+.toolbar ul li:hover {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.icons-and-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icons styling */
+.icons i {
+  font-size: 18px;
+  color: black;
+}
+
+.icons i:hover {
+  cursor: pointer;
+  color: #007bff;
+}
+
+/* Placeholder styling */
+.placeholder select {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f8f8f8;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  padding-right: 25px;
+}
+
+.placeholder select:after {
+  content: "\25BC";
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.three-dots {
+  margin-left: 10px;
+  font-size: 18px;
+}
+/* Small Navigation Gray */
+.small-nav-gray {
+  display: flex;
+  align-items: center;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.small-nav-gray .up-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #000;
+  margin-right: 10px;
+}
+
+.small-nav-gray .nav-text {
+  flex: 1;
+  font-weight: bold;
+}
+
+.small-nav-gray .see-more {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.see-more {
+  float: right;
+  margin-top: 6px;
+}
+.description-divider {
+  border-top: 1 px solid gray;
+
+  margin-bottom: 10px;
+}
